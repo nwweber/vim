@@ -17,7 +17,7 @@ set number
 " always show commands
 set showcmd
 " try this out: visually current line of cursor
-set cursorline
+" set cursorline
 " automatically load indentation schemes depending on filetytpe
 filetype indent on
 " candidates for vim file open dialogue

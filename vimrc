@@ -4,6 +4,9 @@ syntax on
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 " turn on spell checker
 set spell
+" make spell checking highlighting less intrusive, see here: https://stackoverflow.com/a/6009026
+hi clear SpellBad
+hi SpellBad cterm=underline
 " pretty colors :) find a nice one later
 " colorscheme
 " visually, 1 tab = 4 spaces

@@ -1,5 +1,14 @@
+" enable one dark theme
+" see here for more info: https://github.com/joshdick/onedark.vim
+packadd! onedark.vim
+" enable 24 bit colors
+if (has("termguicolors"))
+    set termguicolors
+endif
 " syntax highlighting
 syntax on
+" pretty colors :) find a nice one later
+colorscheme onedark
 " let .md files be recognized as markdown
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 " turn on spell checker
@@ -7,8 +16,6 @@ set spell
 " make spell checking highlighting less intrusive, see here: https://stackoverflow.com/a/6009026
 hi clear SpellBad
 hi SpellBad cterm=underline
-" pretty colors :) find a nice one later
-" colorscheme
 " visually, 1 tab = 4 spaces
 set tabstop=4
 " when hitting tab actually enter 4 spaces
